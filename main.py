@@ -1,4 +1,5 @@
 """
+
 This is the part where the mechanic is explained.
 As you can see, this is the LINUX MUSIC BOX, where
 you can make your own tunes using pysine.
@@ -66,7 +67,7 @@ def main():
     dur = noteDuration()
 
     #Set your referred tempo here in BPM
-    dur.setTempo(150)
+    dur.setTempo(180)
 
 
     nLoopCount = 1
@@ -77,9 +78,9 @@ def main():
     #TETRIS THEME
     while nLoopCount >= 0:
 
-        nCounter = 1
+        nCounter1 = 1
 
-        while (nCounter >= 0):
+        while (nCounter1 >= 0):
             #Bar One
             sine(freq.numToFrequency(17), dur.noteToSecs(4)) # E
             sine(freq.numToFrequency(12), dur.noteToSecs(8)) # B
@@ -113,8 +114,6 @@ def main():
             sine(freq.numToFrequency(10), dur.noteToSecs(4)) # A
             sine(freq.numToFrequency(10), dur.noteToSecs(2)) # A
 
-            #REPEAT#
-
             #Bar Five
             sine(freq.numToFrequency(15), dur.noteToSecs(4)) # D
             sine(freq.numToFrequency(15), dur.noteToSecs(8)) # D
@@ -146,33 +145,30 @@ def main():
             sine(freq.numToFrequency(10), dur.noteToSecs(4)) # A
             sine(freq.numToFrequency(10), dur.noteToSecs(2)) # A
 
-            nCounter-=1
+            nCounter1-=1
 
-        #CODA
+        nCounter2 = 1
+            
 
-        #Bar Ninth
-        sine(freq.numToFrequency(17), dur.noteToSecs(2)) # E
-        sine(freq.numToFrequency(13), dur.noteToSecs(2)) # C
+        while (nCounter2 >= 0):
+            #Bar Ninth
+            sine(freq.numToFrequency(17), dur.noteToSecs(2)) # E
+            sine(freq.numToFrequency(13), dur.noteToSecs(2)) # C
 
-        #Bar Tenth
-        sine(freq.numToFrequency(15), dur.noteToSecs(2)) # D
-        sine(freq.numToFrequency(12), dur.noteToSecs(2)) # B
+            #Bar Tenth
+            sine(freq.numToFrequency(15), dur.noteToSecs(2)) # D
+            sine(freq.numToFrequency(12), dur.noteToSecs(2)) # B
 
-        #Bar Eleventh
-        sine(freq.numToFrequency(13), dur.noteToSecs(2)) # C
-        sine(freq.numToFrequency(10), dur.noteToSecs(2)) # A
+            if (nCounter2 == 1):
+                #Bar Eleventh
+                sine(freq.numToFrequency(13), dur.noteToSecs(2)) # C
+                sine(freq.numToFrequency(10), dur.noteToSecs(2)) # A
 
-        #Bar Twelth
-        sine(freq.numToFrequency(9), dur.noteToSecs(2)) # G#
-        sine(freq.numToFrequency(12), dur.noteToSecs(2)) # B
-
-        #Bar 13th
-        sine(freq.numToFrequency(17), dur.noteToSecs(2)) # E
-        sine(freq.numToFrequency(13), dur.noteToSecs(2)) # C
-
-        #Bar 14th
-        sine(freq.numToFrequency(15), dur.noteToSecs(2)) # D
-        sine(freq.numToFrequency(12), dur.noteToSecs(2)) # B
+                #Bar Twelth
+                sine(freq.numToFrequency(9), dur.noteToSecs(2)) # G#
+                sine(freq.numToFrequency(12), dur.noteToSecs(2)) # B
+            
+            nCounter2 -=1
 
         #Bar 15th 
         sine(freq.numToFrequency(13), dur.noteToSecs(4)) # C
