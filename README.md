@@ -23,6 +23,7 @@ python3 main.py
 <ul>
     <li> Able to do smaller than 16th notes</li>
     <li> Implementation of GUI </li>
+    <li> Multithreading</li>
 </ul>
 
 ## Instructions
