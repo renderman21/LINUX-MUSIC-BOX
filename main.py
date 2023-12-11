@@ -55,6 +55,10 @@ NOTES DURATION:
 
 That is all. Have fun!
 
+Reference: 
+https://github.com/lneuhaus/pysine 
+
+
 """
 
 from utils import *
@@ -76,6 +80,8 @@ def main():
     #This is where you will put your notes
 
     #TETRIS THEME
+    
+    
     while nLoopCount >= 0:
 
         nCounter1 = 1
