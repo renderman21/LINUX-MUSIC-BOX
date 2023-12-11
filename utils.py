@@ -4,6 +4,10 @@ notes, coded by the user for convinience.
 
 Note: Classes are used. 
 
+Reference: https://www.liutaiomottola.com/formulae/freqtab.htm 
+Author's note: This project was made two years ago and the original reference is lost
+However, this is still similar to the one I had refered to long time ago. 
+
 """
 
 #This is a class that will convert the note duration in seconds.
